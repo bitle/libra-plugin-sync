@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!--	Copyright 2008-2010 Daniel Cachapa <cachapa@gmail.com>		-->
+
+<resources>
+	<string name="app_name">Libra</string>
+	<string name="tagline">Weight Manager</string>
+	
+	
+	<!-- ChartScreen -->
+	<string name="welcome_to_libra">Welcome to Libra</string>
+	<string name="welcome_to_libra_msg">You may want to start by telling Libra a little bit about yourself in the preferences screen.\n\nThen come back to the chart page and insert your weight using the options menu.\n\nHave fun!</string>
+	<string name="changelog_title">Changelog</string>
+	<string name="close">Close</string>
+	
+	<string name="current_trend">Trend</string>
+	<string name="bmi">BMI</string>
+	<string name="seven_day_trend_variation">7-day trend variation</string>
+	<string name="forecast">Forecast</string>
+	<string name="weight_per_week">%s/week</string>
+	<string name="goal">Goal</string>
+	<string name="expected">Expected</string>
+	<string name="expected_unknown">Unknown</string>
+	<string name="logged_in_msg">Logged in to DailyBurn</string>
+	<string name="sync_now_question">Would you like to synchronize now?</string>
+	<string name="synchronize">Synchronize</string>
+	<string name="later">Later</string>
+	<string name="not_available">N/A</string>
+	<string name="insert_weight">Insert weight</string>
+	<string name="insert_body_fat">Insert body fat</string>
+	<string name="insert_comment">Insert comment</string>
+	<string name="comment">Comment</string>
+	<string name="chart_zoom">Chart zoom</string>
+	<string name="share_chart">Share chart</string>
+	<string name="libra_chart">Libra chart</string>
+	<string name="shared_from_libra_weight_manager_url">Shared from %1$s for Android: %2$s</string>
+	<string name="error_creating_chart">Couldn\'t save file: %s</string>
+	<string name="chart_saved">Chart saved as %s</string>
+	<string name="connection_failed">Connection failed</string>
+	<string name="importing_values_withings">Importing values from Withings</string>
+	<string name="importing_values_dailyburn">Importing values from DailyBurn</string>
+	<string name="import_complete_nothing">Nothing to import</string>
+	<string name="import_complete_one">Imported 1 value</string>
+	<string name="import_complete_many">Imported %d values</string>
+	<string name="uploading_values">Uploading new values to DailyBurn...</string>
+	<string name="upload_complete_one">Uploaded 1 value</string>
+	<string name="upload_complete_many">Uploaded %d values</string>
+	<string name="energy_per_day">/day</string>
+	<string name="loading">Loading...</string>
+	<string name="backing_up">Backing up the database...</string>
+	<string name="database_backed_up">Database backed up</string>
+	<string name="one_week">One week</string>
+	<string name="fifteen_days">15 days</string>
+	<string name="one_month">One month</string>
+	<string name="two_months">Two months</string>
+	<string name="three_months">Three months</string>
+	<string name="six_months">Six months</string>
+	<string name="one_year">One year</string>
+	<string name="n_years">%d years</string>
+	<string name="complete_chart">Complete chart</string>
+	<string name="withings_notification_title">Withings Body Scale</string>
+	<string name="withings_notification_one_value">Received a new value of %s</string>
+	<string name="withings_notification_many_values">Received %d values</string>
+	<string name="warning">Warning</string>
+	<string name="warn_external_storage">Libra has been moved to this device\'s external storage (SD card).\n\nThis might cause the widget to stop working, and dissapear from the widget selection list.\nIf you use the widget, please consider moving Libra back to the system memory.</string>
+	<string name="ads_disabled_msg">Thank you for supporting Libra.\nThe ads will be removed on the next start.</string>
+	<string name="more">More...</string>
+	
+	
+	<!-- Insert value -->
+	<string name="insert_value_title">Insert value for %s</string>
+	<string name="speak_value">Speak your weight (without units)</string>
+	<string name="speak_value_failed">Sorry, I couldn\'t understand</string>
+	<string name="insert">Insert</string>
+	<string name="update">Update</string>
+	<string name="date">Date</string>
+	<string name="no_value">No value</string>
+	<string name="value_inserted">Value inserted</string>
+	<string name="comment_inserted">Comment inserted</string>
+	<string name="value_updated">Value updated</string>
+	<string name="value_not_updated">Error updating</string>
+	<string name="update_value_dialog">A value of %1$s already exists for that date.\n\nWould you like to update it to %2$s?</string>
+	<string name="value_uploaded">Value uploaded to DailyBurn</string>
+	<string name="value_not_uploaded">Couldn\'t upload value. Will try again later</string>
+	
+	
+	<!-- Statistics -->
+	<string name="statistics_title">Statistics</string>
+	<string name="statistics_database">Database</string>
+	<string name="statistics_database_size">Database size</string>
+	<string name="statistics_database_entries">%d entries</string>
+	<string name="statistics_years_months_days">%1$d years, %2$d months, %3$d days</string>
+	<string name="statistics_total_weight_change">Total weight change</string>
+	<string name="statistics_weight">Weight</string>
+	<string name="statistics_highest_value">Highest recorded weight value</string>
+	<string name="statistics_lowest_value">Lowest recorded weight value</string>
+	<string name="statistics_highest_trend">Highest trend value</string>
+	<string name="statistics_lowest_trend">Lowest trend value</string>
+	<string name="statistics_month_highest_loss">Month with highest weight loss</string>
+	<string name="statistics_month_highest_gain">Month with highest weight gain</string>
+	<string name="statistics_month_highest_percentage_loss">Month with highest percentage loss</string>
+	<string name="statistics_month_highest_percentage_gain">Month with highest percentage gain</string>
+	<string name="statistics_month_year">%1$s %2$d</string>
+	<string name="statistics_trend_analysis">Trend analysis</string>
+	<string name="statistics_last">Last</string>
+	<string name="statistics_weight_per_week">%s/week</string>
+	<string name="statistics_energy_per_day">%s/day</string>
+	<string name="statistics_week">Week</string>
+	<string name="statistics_fifteen_days">15 days</string>
+	<string name="statistics_month">Month</string>
+	<string name="statistics_three_months">Three months</string>
+	<string name="statistics_six_months">Six months</string>
+	<string name="statistics_year">Year</string>
+	
+	
+	<!-- Preferences -->
+	<string name="preferences">Preferences</string>
+	
+	<string name="units">Units</string>
+	<string name="height_unit">Height unit</string>
+	<string name="meters">Meters</string>
+	<string name="feet">Feet</string>
+	<string name="weight_unit">Weight unit</string>
+	<string name="kilograms">Kilograms</string>
+	<string name="pounds">Pounds</string>
+	<string name="stones">Stones</string>
+	<string name="body_fat_type">Body fat type</string>
+	<string name="percentage">Percentage</string>
+	<string name="energy_unit">Energy unit</string>
+	<string name="kcal">kcal</string>
+	<string name="kj">kJ</string>
+	<!-- Change refers to the label which informs the user about the change in the current weight needed to reach the goal -->
+	<string name="change">Change</string>
+	<string name="goal_weight_title">Goal weight</string>
+	<string name="ideal_bmi_msg">An ideal BMI is usually of around 22, though it varies from person to person</string>
+	
+	<string name="user_details">User details</string>
+	<string name="height">Height</string>
+	<string name="not_set">Not set</string>
+	<string name="goal_weight">Goal weight</string>
+	<string name="show_goal_date">Show expected goal date</string>
+	
+	<string name="chart_preferences">Chart preferences</string>
+	<string name="show_bmi_lines">Show BMI lines</string>
+	<string name="always_show_goal">Always show goal line</string>
+	<string name="show_diet_plan">Show diet plan line</string>
+	<string name="show_forecast_line">Show forecast line</string>
+	<string name="show_zoom_buttons">Show zoom buttons</string>
+	<string name="search_button_action">Search button action</string>
+	<string name="go_to_today">Scroll chart to current date </string>
+	<string name="zoom_level">Select the zoom level</string>
+	
+	<string name="chart_labels">Chart labels</string>
+	<string name="trend_line">Trend line</string>
+	<string name="latest_value">Latest value</string>
+	
+	<string name="database">Database</string>
+	<string name="database_entries">Database list</string>
+	<string name="database_empty">The database is empty</string>
+	<string name="database_one_entry">1 entry</string>
+	<string name="database_many_entries">%d entries</string>
+	<string name="auto_backup">Backup automatically</string>
+	<string name="backup_automatically">Perform a weekly export of the database to your SD card</string>
+	
+	<string name="general_preferences">General preferences</string>
+	<string name="daily_notification">Daily notification</string>
+	<string name="daily_notification_description">Reminds you to weigh in every morning</string>
+	<string name="disable_ads">Disable ads</string>
+	<string name="disable_ads_description">Buy the Pro plugin in the Android Market</string>
+	<string name="donate">Donate</string>
+	<string name="donate_description">A small contribution to make Libra better.\nNote: Donations don\'t disable ads.</string>
+	<string name="facebook_page">Facebook Page</string>
+	<string name="google_plus_page">Google+ Page</string>
+	<string name="error_market">Couldn\'t find the Android Market application in your device</string>
+	<string name="libra_faq">Libra FAQ</string>
+	<string name="faq_description">Frequently Asked Questions</string>
+	<string name="contact_developer">Contact developer</string>
+	<string name="contact_developer_message">Please check the FAQ before contacting the developer.\n\nChances are the topic has already been covered there.</string>
+	<string name="open_faq">Open FAQ</string>
+	<string name="send_email">Send email</string>
+	<string name="send_email_msg">Send an email to libra.android@googlemail.com</string>
+	<string name="error_email">Couldn\'t find an email client in your device. You\'ll have to send the email manually.</string>
+	<string name="about_libra">About Libra</string>
+	<string name="about_msg">For Great Body!!!</string>
+	
+	
+	<!--  Synchronization -->
+	<string name="synchronization">Synchronization</string>
+	<string name="log_in">Log in</string>
+	<string name="log_out">Log out</string>
+	<string name="redirecting">Redirecting...</string>
+	<string name="completing_login">Completing login...</string>
+	<string name="logged_in_to_service">Logged in to %s</string>
+	<string name="error">Error</string>
+	<string name="logged_in">Currently logged in</string>
+	<string name="logged_in_as_user">Currently logged in as %s</string>
+	<string name="get_all_values">Get all values</string>
+	<string name="synchronize_now">Synchronize now</string>
+	
+	<string name="dropbox">Dropbox</string>
+	<string name="fitbit">Fitbit</string>
+	<string name="withings">Withings</string>
+	
+	<!-- Diet Plan -->
+	<string name="diet_plan">Diet plan</string>
+	<string name="start_date">Start date</string>
+	<string name="initial_weight">Initial weight</string>
+	<string name="goal_date">Goal date</string>
+	<string name="desired_weight_change">Desired rate of weight change</string>
+	<string name="weight_change_per_week">Weight change / week</string>
+	<string name="generate_plan">Auto generate plan</string>
+	<string name="recommended_error_msg">Error: at least one entry in the database is required</string>
+	<string name="revert_plan">Revert plan</string>
+	<string name="accept">Accept</string>
+	<string name="save_plan">Save plan?</string>
+	<string name="save_plan_msg">Would you like to save your changes to the plan?</string>
+	<string name="save">Save</string>
+	<string name="discard">Discard</string>
+	
+	
+	<!-- Daily Reminder -->
+	<string name="reminder_title">Weigh in reminder</string>
+	<string name="reminder_description">Tap here to insert your weight</string>
+	
+	
+	<!-- About Withings -->
+	<string name="the_withings_body_scale">The Withings Body Scale</string>
+	<string name="about_withings_text">The Withings Body Scale is able to connect to the Internet through your wireless network.\n\nWhen you weigh yourself using this scale, the values are automatically uploaded to the Withings website, as well as all of your devices running Libra.\n\nIf you use the button below to purchase your Withings scale, Libra will receive a small percentage of the price at no extra cost to you :-)</string>
+	<string name="purchase">Purchase</string>
+	
+	
+	<!-- Advanced Preferences -->
+	<string name="advanced_preferences">Advanced preferences</string>
+	<string name="smoothing_days">Smoothing days</string>
+	<string name="smoothing_days_description">Controls how strongly each weight value affects the trend</string>
+	<string name="smoothing_days_dialog_message">Values must be positive.\nA value of 0 disables the trend line.\n\nThe recommended value is 7.</string>
+	<string name="regenerating_trend_values">Regenerating trend values...</string>
+	
+	<string name="forecast_days">Forecast days</string>
+	<string name="forecast_days_description">Controls how many days to use for the forecast calculation</string>
+	<string name="forecast_days_dialog_message">The minimum value is 2.\n\nThe recommended value is 7.</string>
+	
+	<string name="force_plugin_recheck">Force plugin recheck</string>
+	<string name="force_plugin_recheck_description">Useful if the Pro plugin was already purchased, but the ads are still visible</string>
+	<string name="force_plugin_recheck_msg">Request sent. Please allow some time for the response to come through.</string>
+	
+	<!-- Database list -->
+	<string name="database_empty_msg">The database is empty.\n\nOpen the menu if you\'d like to import data from a backup.</string>
+	<string name="long_press_tip">Tip: long-press an entry to edit or delete it</string>
+	<string name="weight">Weight</string>
+	<string name="body_fat">Body fat</string>
+	<string name="trend">Trend</string>
+	<string name="variance">Variance</string>
+	<string name="delete">Delete</string>
+	<string name="edit">Edit</string>
+	<string name="value_deleted">Value deleted</string>
+	<string name="all_entries">All entries</string>
+	<string name="share_database">Share database</string>
+	<string name="export_database">Export database</string>
+	<string name="import_database">Import database</string>
+	<string name="no_files_found_msg">Error: there are no files in the Libra directory in your SD card</string>
+	<string name="delete_database">Delete database</string>
+	<string name="importing_database">Importing database...</string>
+	<string name="confirmation_title">Are you sure?</string>
+	<string name="confirmation_msg">You are about to delete the entire database.\nThis action cannot be undone.</string>
+	<string name="boom">Boom!</string>
+	<string name="database_deleted">Database deleted</string>
+	<string name="database_rescued">Whew!</string>
+	
+	
+	<!-- Widget -->
+	<string name="last_update">Last update</string>
+	<string name="to_goal">To goal</string>
+	<string name="today">Today</string>
+	<string name="yesterday">Yesterday</string>
+	<string name="n_days_ago">%d days ago</string>
+	<string name="expected_in_n_days">In %d days</string>
+	
+	
+	<!-- About -->
+	<string name="version">Version</string>
+	<string name="license">License</string>
+	<string name="development">Development</string>
+	<string name="acknowledgements">Acknowledgements</string>
+	<string name="translators">Our Generous Translators</string>
+	<string name="translators_description">To whom I\'m enormously grateful, though they\'ve become too many to list here</string>
+	<string name="more_info">More info</string>
+	<string name="project_webpage">Project webpage</string>
+	
+	
+	<!-- BMI -->
+	<!-- These are the classifications for the different BMI levels. -->
+	<!-- You may find these names under you language's Wikipedia entry on BMI, though they may vary from the ones here. -->
+	<!-- If they vary, please try to translate the labels below as accurately as possible. -->
+	<!-- For reference, here is the English version: http://en.wikipedia.org/wiki/Body_mass_index -->
+	<string name="starvation">Starvation</string>
+	<string name="severely_underweight">Sev. underweight</string>
+	<string name="underweight">Underweight</string>
+	<string name="normal">Normal</string>
+	<string name="overweight">Overweight</string>
+	<string name="obese_class_i">Obese cl. I</string>
+	<string name="obese_class_ii">Obese cl. II</string>
+	<string name="obese_class_iii">Obese cl. III</string>
+</resources>

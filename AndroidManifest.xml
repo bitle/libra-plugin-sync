@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="net.cachapa.libra.plugin.sync"
+	android:versionCode="1"
+	android:versionName="1.0" >
+
+	<uses-sdk
+		android:minSdkVersion="7"
+		android:targetSdkVersion="15" />
+
+	<uses-permission android:name="android.permission.INTERNET" />
+	<!-- Necessary for push notifications -->
+	<uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+	<permission android:name="net.cachapa.libra.plugin.sync.permission.C2D_MESSAGE"
+		android:protectionLevel="signature" />
+	<uses-permission android:name="net.cachapa.libra.plugin.sync.permission.C2D_MESSAGE" />
+
+	<application android:icon="@drawable/icon"
+		android:label="@string/synchronization" >
+		
+		<activity android:name=".MainActivity">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		
+		<activity android:name=".DropboxActivity" >
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.BROWSABLE" />
+				<data android:scheme="libra" android:host="dropbox" />
+			</intent-filter>
+		</activity>
+		
+		<activity android:name=".FitbitActivity" >
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.BROWSABLE" />
+				<data android:scheme="libra" android:host="fitbit" />
+			</intent-filter>
+		</activity>
+		
+		<activity android:name=".WithingsActivity" >
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.BROWSABLE" />
+				<data android:scheme="libra" android:host="withings" />
+			</intent-filter>
+		</activity>
+		
+		<!-- C2DM Notifications -->
+		<receiver android:name=".util.CloudManager" android:permission="com.google.android.c2dm.permission.SEND">
+			<!-- Receive the registration id -->
+			<intent-filter>
+				<action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+				<category android:name="net.cachapa.libra.plugin.sync" />
+			</intent-filter>
+			<!-- Receive the actual message -->
+			<intent-filter>
+				<action android:name="com.google.android.c2dm.intent.RECEIVE" />
+				<category android:name="net.cachapa.libra.plugin.sync" />
+			</intent-filter>
+		</receiver>
+		
+	</application>
+
+</manifest>

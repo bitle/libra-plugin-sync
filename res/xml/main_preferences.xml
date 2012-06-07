@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" android:title="@string/synchronization">
+	
+	<!-- Entries are ordered alphabetically -->
+	
+	<Preference
+		android:key="DropboxPreference"
+		android:icon="@drawable/ic_settings_dropbox"
+		android:title="@string/dropbox" />
+	
+	<Preference
+		android:key="FitbitPreference"
+		android:icon="@drawable/ic_settings_fitbit"
+		android:title="@string/fitbit" />
+	
+	<Preference
+		android:key="WithingsPreference"
+		android:icon="@drawable/ic_settings_withings"
+		android:title="@string/withings" />
+	
+</PreferenceScreen>

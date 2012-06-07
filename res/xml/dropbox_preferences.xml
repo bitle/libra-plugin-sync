@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" android:title="@string/dropbox">
+	
+	<Preference
+		android:key="LoginPreference"
+		android:title="@string/log_in" />
+	
+	<Preference
+		android:key="SynchronizePreference"
+		android:title="@string/synchronize_now" />
+	
+</PreferenceScreen>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" android:title="@string/withings">
+	
+	<Preference
+		android:key="LoginPreference"
+		android:title="@string/log_in" />
+	
+	<Preference android:key="GetAllPreference"
+		android:title="@string/get_all_values"/>
+	
+</PreferenceScreen>

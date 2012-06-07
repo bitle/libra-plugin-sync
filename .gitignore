@@ -1,6 +1,13 @@
+# Compiled files #
 *.class
 
 # Package Files #
 *.jar
 *.war
 *.ear
+
+# Folders #
+bin
+gen
+assets
+misc
