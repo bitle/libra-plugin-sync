@@ -2,7 +2,6 @@
 *.class
 
 # Package Files #
-*.jar
 *.war
 *.ear
 
@@ -11,3 +10,6 @@ bin
 gen
 assets
 misc
+
+# Credentials File #
+/res/values/credentials.xml
