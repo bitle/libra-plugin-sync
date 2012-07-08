@@ -175,7 +175,7 @@
 	<string name="libra_faq">Libra FAQ</string>
 	<string name="faq_description">Frequently Asked Questions</string>
 	<string name="contact_developer">Contact developer</string>
-	<string name="contact_developer_message">Please check the FAQ before contacting the developer.\n\nChances are the topic has already been covered there.</string>
+	<string name="contact_developer_message">Please check the FAQ before contacting the developer.\nChances are the topic has already been covered there.\n\nQuestions already covered in the FAQ will go unanswered.</string>
 	<string name="open_faq">Open FAQ</string>
 	<string name="send_email">Send email</string>
 	<string name="send_email_msg">Send an email to libra.android@googlemail.com</string>
