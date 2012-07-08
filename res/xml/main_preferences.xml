@@ -3,15 +3,15 @@
 	
 	<!-- Entries are ordered alphabetically -->
 	
-<!-- 	<Preference -->
-<!-- 		android:key="DropboxPreference" -->
-<!-- 		android:icon="@drawable/ic_settings_dropbox" -->
-<!-- 		android:title="@string/dropbox" /> -->
+	<Preference
+		android:key="DropboxPreference"
+		android:icon="@drawable/ic_settings_dropbox"
+		android:title="@string/dropbox" />
 	
-<!-- 	<Preference -->
-<!-- 		android:key="FitbitPreference" -->
-<!-- 		android:icon="@drawable/ic_settings_fitbit" -->
-<!-- 		android:title="@string/fitbit" /> -->
+	<Preference
+		android:key="FitbitPreference"
+		android:icon="@drawable/ic_settings_fitbit"
+		android:title="@string/fitbit" />
 	
 	<Preference
 		android:key="WithingsPreference"
