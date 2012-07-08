@@ -12,10 +12,10 @@ public class MainActivity extends PreferenceActivity {
 		addPreferencesFromResource(R.xml.main_preferences);
 
 		
-		findPreference("DropboxPreference").setIntent(
-				new Intent(this, net.cachapa.libra.plugin.sync.DropboxActivity.class));
-		findPreference("FitbitPreference").setIntent(
-				new Intent(this, net.cachapa.libra.plugin.sync.FitbitActivity.class));
+//		findPreference("DropboxPreference").setIntent(
+//				new Intent(this, net.cachapa.libra.plugin.sync.DropboxActivity.class));
+//		findPreference("FitbitPreference").setIntent(
+//				new Intent(this, net.cachapa.libra.plugin.sync.FitbitActivity.class));
 		findPreference("WithingsPreference").setIntent(
 				new Intent(this, net.cachapa.libra.plugin.sync.WithingsActivity.class));
 	}
