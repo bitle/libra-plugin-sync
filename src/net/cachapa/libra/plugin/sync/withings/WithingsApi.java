@@ -22,6 +22,8 @@ public class WithingsApi extends OAuthApi {
 	private static final String ACCESS_TOKEN_URL = "https://oauth.withings.com/account/access_token";
 	private static final String AUTHORIZE_URL = "https://oauth.withings.com/account/authorize";
 	private static final String SERVICE_NAME = "withings";
+	
+	private static final String NOTIFICATION_URL = "http://libra.cachapa.net/notifications";
 
 	private static final String PREF_USER_ID = "userId";
 	private static final String PREF_USER_NAME = "userName";
@@ -75,7 +77,7 @@ public class WithingsApi extends OAuthApi {
 			saveString(PREF_USER_NAME, userName);
 
 			// Create an endpoint for notification subscriptions
-			CloudManager.registerC2DM(getContext(), CloudManager.SERVICE_WITHINGS);
+			CloudManager.registerGCM(getContext(), CloudManager.SERVICE_WITHINGS);
 		} catch (Exception e) {
 			// If the name is not retrievable, then cancel the login procedure
 			logout();
@@ -102,7 +104,7 @@ public class WithingsApi extends OAuthApi {
 
 	public void subscribe(long subscriptionId) throws Exception {
 		// Create/update a Withings notification subscription
-		String callbackUrl = "http://cachapa.net/libra_notifications/callback_withings.php?id=" + subscriptionId;
+		String callbackUrl = NOTIFICATION_URL + "/callback_withings.php?id=" + subscriptionId;
 		get(BASE_URL
 				+ "/notify?action=subscribe"
 				+ "&userid=" + loadInt(PREF_USER_ID)
@@ -133,7 +135,7 @@ public class WithingsApi extends OAuthApi {
 	}
 	
 	public void unsubscribe() throws Exception {
-		String callbackUrl = "http://cachapa.net/libra_notifications/callback_withings.php?id=" + loadLong(PREF_SUBSCRIPTION_ID);
+		String callbackUrl = NOTIFICATION_URL + "/callback_withings.php?id=" + loadLong(PREF_SUBSCRIPTION_ID);
 		get(BASE_URL
 				+ "/notify?action=revoke"
 				+ "&userid=" + loadInt(PREF_USER_ID)

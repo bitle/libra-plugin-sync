@@ -1,5 +1,6 @@
 package net.cachapa.libra.plugin.sync.util;
 
+import net.cachapa.libra.plugin.sync.R;
 import net.cachapa.libra.plugin.sync.withings.WithingsApi;
 import net.cachapa.libra.plugin.sync.withings.WithingsTaskHelper;
 
@@ -22,20 +23,20 @@ public class CloudManager extends BroadcastReceiver {
 	
 	private static int registeringService = -1;
 
-	public static void registerC2DM(Context context, int service) {
+	public static void registerGCM(Context context, int service) {
 		// HACK: I couldn't figure out how to know who called the registration in onReceive()
 		registeringService = service;
 		
 		Intent registrationIntent = new Intent("com.google.android.c2dm.intent.REGISTER");
 		registrationIntent.putExtra("app", PendingIntent.getBroadcast(context, 0, new Intent(), 0));
-		registrationIntent.putExtra("sender", "libra.android@gmail.com");
+		registrationIntent.putExtra("sender", context.getString(R.string.gcm_project_id));
 		context.startService(registrationIntent);
 	}
 
-	public static void unregisterC2DM(Context context, int service) {
+	public static void unregisterGCM(Context context, int service) {
 		registeringService = service;
 		
-		Log.d("cloud", "Trying to unregister from C2DM");
+		Log.d("cloud", "Trying to unregister from GCM");
 		Intent unregIntent = new Intent("com.google.android.c2dm.intent.UNREGISTER");
 		unregIntent.putExtra("app", PendingIntent.getBroadcast(context, 0, new Intent(), 0));
 		context.startService(unregIntent);
@@ -64,7 +65,7 @@ public class CloudManager extends BroadcastReceiver {
 	}
 
 	private void handleMessage(Context context, Intent intent) {
-		Log.d("cloud", "Got a message from C2DM");
+		Log.d("cloud", "Got a message from GCM");
 		int service = Integer.valueOf(intent.getStringExtra("service")).intValue();
 		switch (service) {
 		case SERVICE_WITHINGS:
@@ -75,7 +76,7 @@ public class CloudManager extends BroadcastReceiver {
 			} else {
 				// If we're not logged in to Withings, then we should cancel the
 				// notification service
-				unregisterC2DM(context, SERVICE_WITHINGS);
+				unregisterGCM(context, SERVICE_WITHINGS);
 			}
 			break;
 		}
@@ -83,8 +84,8 @@ public class CloudManager extends BroadcastReceiver {
 
 	private static void registerNotificationServer(Context context, String registration) throws Exception {
 		// Register the notification on the third-party server and get the notification id
-		String request = "http://cachapa.net/libra_notifications/register.php"
-				+ "?c2dm_id=" + registration;
+		String request = "http://libra.cachapa.net/notifications/register.php"
+				+ "?gcm_id=" + registration;
 		String response = get(request);
 		long notificationId = new JSONObject(response).getLong("id");
 
