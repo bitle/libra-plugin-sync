@@ -6,12 +6,12 @@
 	<Preference
 		android:key="DropboxPreference"
 		android:icon="@drawable/ic_settings_dropbox"
-		android:title="@string/dropbox" />
+		android:title="@string/dropbox" android:enabled="false"/>
 	
 	<Preference
 		android:key="FitbitPreference"
 		android:icon="@drawable/ic_settings_fitbit"
-		android:title="@string/fitbit" />
+		android:title="@string/fitbit" android:enabled="false"/>
 	
 	<Preference
 		android:key="WithingsPreference"
